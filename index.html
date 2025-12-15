@@ -10,6 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 
 <style>
+/* From Uiverse.io by alshahwan */ 
+/* From uiverse.io by @alshahwan */
+
+
 /* ---------- RESET ---------- */
 html, body {
   height: 100%;
@@ -19,38 +23,45 @@ html, body {
 
 /* ---------- COLORS ---------- */
 :root {
-  --gold: #d4af37;      /* طلایی لوکس */
+  --gold: #d4af37;
   --dark: #111;
-  --bg1: #1d1d1d;
-  --bg2: #2a2a2a;
 }
 
 /* ---------- BACKGROUND ---------- */
+body {
+  margin: 0;
+  height: 100%;
+  color: gold;
+  text-align: center;
+  font-family: 'Vazirmatn', sans-serif;
+
+  /* Dark animated grid background */
+  background-color: #121212;
+  background-image:
+    linear-gradient(45deg, #1a1a1a 25%, transparent 25%),
+    linear-gradient(-45deg, #1a1a1a 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1a1a1a 75%),
+    linear-gradient(-45deg, transparent 75%, #1a1a1a 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  }
+  100% {
+    background-position: 40px 40px, 40px 60px, 60px 20px, 20px 40px;
+  }
+}
+
+/* ---------- CONTAINER ---------- */
 .container {
   width: 100%;
   min-height: 100vh;
-  --s: 200px;
-  --c1: #1d1d1d;
-  --c2: #4e4f51;
-  --c3: #3c3c3c;
-  background:
-    repeating-conic-gradient(
-        from 30deg,
-        #0000 90deg 120deg,
-        var(--c3) 0deg 180deg
-      )
-      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
-    repeating-conic-gradient(
-      from 30deg,
-      var(--c1) 0deg 60deg,
-      var(--c2) 0deg 120deg,
-      var(--c3) 0deg 180deg
-    );
-  background-size: var(--s) calc(var(--s) * 0.577);
-  text-align: center;
-  color: gold;
-  font-family: 'Vazirmatn', sans-serif;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 /* ---------- LOGO ---------- */
@@ -91,6 +102,9 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   margin-bottom: 20px;
+}
+.main-btn:active {
+  transform: scale(0.97);
 }
 
 /* ---------- SOCIAL BUTTONS ---------- */
@@ -153,6 +167,9 @@ h1 {
   font-weight: bold;
   text-decoration: none;
 }
+.buy-btn:active {
+  transform: scale(0.97);
+}
 
 /* ---------- CONTACT ---------- */
 .contacts a {
@@ -179,6 +196,46 @@ footer {
   color: #aaa;
   font-size: 14px;
 }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+  h1 { font-size: 1.8em; }
+  .main-btn { padding: 12px 20px; font-size: 14px; }
+  .product-box { width: 95%; }
+}
+
+/* ---------- 3D BUTTON EFFECT GOLDEN ---------- */
+.main-btn, .buy-btn, .contacts a {
+  --primary: #d4af37;   /* طلایی */
+  --secondary: #b38b23; /* طلایی تیره‌تر برای مرز و سایه */
+  --shadow: #d4af3733;  /* طلایی شفاف برای drop-shadow */
+  
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #111; /* متن تیره روی طلایی */
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 0 var(--secondary);
+  transform: skew(-10deg);
+  transition: all 0.1s ease;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  position: relative;
+  filter: drop-shadow(0 15px 20px var(--shadow));
+}
+
+.main-btn:active, .buy-btn:active, .contacts a:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--shadow);
+}
 </style>
 </head>
 
@@ -195,9 +252,9 @@ footer {
   <a class="main-btn" href="https://nshn.ir/7f_b1MYTNJxr-B">نمایش روی نقشه</a>
 
   <div class="socials">
-    <a class="instagram" href="https://www.instagram.com/golden_mobile.mashhad">اینستاگرام</a>
-    <a class="telegram" href="https://t.me/golden_mobile_mashhad">تلگرام</a>
-    <a class="whatsapp" href="https://chat.whatsapp.com/Ih9ky1kp5byIlsHSGSo19N">واتساپ</a>
+    <a class="main-btn" href="https://www.instagram.com/golden_mobile.mashhad">اینستاگرام</a>
+    <a class="main-btn" href="https://t.me/golden_mobile_mashhad">تلگرام</a>
+    <a class="main-btn" href="https://chat.whatsapp.com/Ih9ky1kp5byIlsHSGSo19N">واتساپ</a>
   </div>
 
   <div class="desc">
