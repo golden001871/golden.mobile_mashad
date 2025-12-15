@@ -1,208 +1,199 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
- <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>گلدن موبایل | خرید و فروش آیفون کارکرده در مشهد</title>
+<meta name="description" content="فروشگاه گلدن موبایل | خرید و فروش آیفون کارکرده، ارائه بهترین کیفیت و قیمت مناسب. مشهد.">
 
-<meta name="description" content="فروشگاه گلدن موبایل | خرید و فروش آیفون کارکرده، ارائه بهترین کیفیت و قیمت مناسب. مشهد. golden mobile mashhad">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Vazirmatn', sans-serif;
-      background: linear-gradient(135deg, #2c2c2c, #444);
-      color: #ffd700;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+<style>
+/* ---------- Background (Uiverse) ---------- */
+.container {
+  width: 100%;
+  min-height: 100vh;
 
-    .header {
-      background-color: #333;
-      padding: 10px;
-      font-weight: bold;
-      font-size: 1.1em;
-      color: #ffd700;
-    }
+  --s: 200px;
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
 
-    .g-logo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #ffd700, #cfa300);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 60px;
-      color: #222;
-      font-weight: bold;
-      margin: 30px auto;
-      box-shadow: 0 0 15px gold;
-    }
+  background:
+    repeating-conic-gradient(
+        from 30deg,
+        #0000 90deg 120deg,
+        var(--c3) 0deg 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0deg 60deg,
+      var(--c2) 0deg 120deg,
+      var(--c3) 0deg 180deg
+    );
 
-    h1 {
-      font-size: 2.5em;
-      color: #ffd700;
-      margin-top: 10px;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
+  background-size: var(--s) calc(var(--s) * 0.577);
+  text-align: center;
+  color: gold;
+  padding-bottom: 40px;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 12px;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-size: 1em;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s ease;
-      color: #333;
-      background-color: #ffd700;
-    }
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+}
 
-    .btn:hover {
-      background-color: #e0b900;
-      color: #000;
-    }
+/* ---------- Logo ---------- */
+.g-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd700, #cfa300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
+  color: #222;
+  margin: 30px auto;
+  box-shadow: 0 0 15px gold;
+}
 
-    .map {
-      background-color: #555;
-      color: #fff;
-    }
+/* ---------- Title ---------- */
+h1 {
+  font-size: 2.5em;
+  margin: 10px 0 20px;
+}
 
-    .social-btn {
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-size: 1em;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 10px;
-      display: inline-block;
-      transition: all 0.3s ease;
-      color: #fff;
-    }
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  margin: 12px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background-color: gold;
+  transition: 0.3s;
+}
 
-    .instagram { background-color: #e4405f; }
-    .telegram  { background-color: #0088cc; }
-    .whatsapp  { background-color: #25D366; }
+.btn:hover {
+  background-color: #e0b900;
+}
 
-    .social-btn:hover {
-      transform: scale(1.05);
-    }
+/* ---------- Social ---------- */
+.social-btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  color: #fff;
+}
 
-    .contacts {
-      margin: 25px 0;
-    }
+.instagram { background: #e4405f; }
+.telegram  { background: #0088cc; }
+.whatsapp  { background: #25D366; }
 
-    .call-btn {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 22px;
-      border: 2px solid #ffd700;
-      color: #ffd700;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+/* ---------- Product ---------- */
+.product-box {
+  background: #111;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 350px;
+  border: 2px solid gold;
+}
 
-    .call-btn:hover {
-      background-color: #ffd700;
-      color: #333;
-    }
+.product-box img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid gold;
+}
 
-    footer {
-      background-color: #222;
-      padding: 15px;
-      color: #aaa;
-      font-size: 0.9em;
-      line-height: 1.8;
-    }
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: gold;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    .product-box {
-      background-color: #111;
-      padding: 20px;
-      margin: 50px auto;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 350px;
-      border: 2px solid gold;
-    }
+/* ---------- Contacts ---------- */
+.call-btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 22px;
+  border: 2px solid gold;
+  color: gold;
+  border-radius: 40px;
+  text-decoration: none;
+}
 
-    .product-box img {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid gold;
-    }
+.call-btn:hover {
+  background: gold;
+  color: #333;
+}
 
-    .product-box h3 {
-      color: gold;
-      margin-top: 15px;
-      font-size: 22px;
-    }
-
-    .whatsapp-btn {
-      display: inline-block;
-      margin-top: 15px;
-      background-color: gold;
-      color: black;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-  </style>
+/* ---------- Footer ---------- */
+footer {
+  background: #111;
+  padding: 15px;
+  color: #aaa;
+  font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="g-logo">G</div>
+<div class="container">
 
+  <div class="g-logo">GM</div>
   <h1>GOLDEN MOBILE</h1>
 
-  <a class="btn map" href="https://nshn.ir/7f_b1MYTNJxr-B">نمایش روی نقشه</a>
+  <a class="btn" href="https://nshn.ir/7f_b1MYTNJxr-B">نمایش روی نقشه</a>
 
   <div>
     <a class="social-btn instagram" href="https://www.instagram.com/golden_mobile.mashhad">اینستاگرام</a>
     <a class="social-btn telegram" href="https://t.me/golden_mobile_mashhad">تلگرام</a>
-   <a class="social-btn whatsapp" href= "https://chat.whatsapp.com/Ih9ky1kp5byIlsHSGSo19N">واتساپ</a>
-    <a href="https://t.me/GoldenMobileMashhadBot" target="_blank" style="display: inline-block; background-color: #27ae60; color: #fff; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: bold; margin: 10px;">
-      باشگاه مشتریان
-    </a>
+    <a class="social-btn whatsapp" href="https://chat.whatsapp.com/Ih9ky1kp5byIlsHSGSo19N">واتساپ</a>
   </div>
 
-  <p style="color: white; font-size: 16px; line-height: 2; max-width: 600px; margin: 20px auto;">
-    فروش تخصصی <span style="color: gold;">آیفون کارکرده</span> با تضمین اصالت و سلامت کالا.<br>
-    پخش مستقیم گوشی‌های اپل برای <span style="color: gold;">همکاران فروشنده</span> در سراسر کشور.<br>
-    همراه با پشتیبانی، مشاوره و خدمات پس از فروش.
-  </p>
-
-  <p style="margin-top: 20px; font-style: italic; color: #bbb;">
-    "موبایل کارکرده، اما مطمئن"
+  <p style="color:white; max-width:600px; margin:20px auto; line-height:2">
+    فروش تخصصی <span style="color:gold">آیفون کارکرده</span> با تضمین اصالت و سلامت کالا<br>
+    پخش مستقیم برای همکاران سراسر کشور
   </p>
 
   <div class="product-box">
-    <img src="golden.jpg" alt="VERTU ASCENT X" />
-    <h3>👑VERTU ASCENT X👑</h3>
-    <a class="whatsapp-btn" href="https://wa.me/989012405540" target="_blank">سفارش از واتساپ</a>
+    <img src="golden.jpg" alt="VERTU">
+    <h3>👑 VERTU ASCENT X 👑</h3>
+    <a class="whatsapp-btn" href="https://wa.me/989012405540">سفارش از واتساپ</a>
   </div>
 
-  <div class="contacts">
+  <div>
     <a class="call-btn" href="tel:+985191001756">05191001756</a>
     <a class="call-btn" href="tel:+989012405540">09012405540</a>
     <a class="call-btn" href="tel:+989158300037">09158300037</a>
   </div>
 
   <footer>
-    قدرت گرفته از GOLDEN SYSTEM - ۱۴۰۴<br>
-    مشهد، هاشمیه، نبش هاشمیه ۶، برج آبان، طبقه ۱، واحد ۱۰۴
+    GOLDEN SYSTEM © 1404<br>
+    مشهد، هاشمیه، برج آبان
   </footer>
+
+</div>
 
 </body>
 </html>
